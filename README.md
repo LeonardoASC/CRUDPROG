@@ -5,14 +5,14 @@
 ### Client
 
   1. `$ cd client`
-  2. `$ npm install` or `$ yarn install`
-  3. `$ npm start` or `$ yarn start`
+  2. `$ npm install`
+  3. `$ npm start` 
   
 ### Server
 
-  1. Change your mySQL database data `server/index.js`
+  1. mudar o nome do mySQL `server/index.js`
   2. `$ cd server`
-  3. `$ npm install` or `$ yarn`
+  3. `$ npm install` 
   4. `$ npm rum devStart`
   
 ### Front-end
