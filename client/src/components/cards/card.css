@@ -8,20 +8,6 @@
   cursor: pointer;
 }
 
-.card-id {
-  display: inline-block;
-  
-  margin-right: 10px;
-  margin-top: 5px;
-  background-color: black;
-  border-radius: 5px;
-  color: white;
-  font-weight: 700;
-  padding: 3px;
-  font-family: monospace;
-}
-/* card-id: float: right;*/
-
 .card-title {
   display: inline;
 }
@@ -31,5 +17,6 @@
 }
 
 .card-container:hover {
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }

@@ -7,6 +7,14 @@ export default function App() {
   const [values, setValues] = useState();
   const [listCard, setListCard] = useState([]);
   console.log(listCard);
+  
+  const data = new Date();
+  const dia = String(data.getDate()).padStart(2, '0');
+  const mes = String(data.getMonth() + 1).padStart(2, '0');
+  const ano = data.getFullYear();
+  const dataAtual = ano + '-' + mes + '-' + dia;
+  
+
   const handleRegisterGame = () => {
     Axios.post("http://localhost:3001/register", {
       name: values.name,
@@ -47,7 +55,7 @@ export default function App() {
   return (
     <div className="app-container">
       <div className="register-container">
-        <h1 className="register-title">Scrim Shop</h1>
+        <h1 className="register-title">Lista de Tarefas</h1>
 
         <input
           type="text"
@@ -58,21 +66,22 @@ export default function App() {
         />
         <input
           type="text"
-          placeholder="Prazo"
-          name="deadline"
-          className="register-input"
-          onChange={handleaddValues}
-        />
-        <input
-          type="text"
           placeholder="Descricão"
           name="description"
           className="register-input"
           onChange={handleaddValues}
         />
+        <input
+          type="date"
+          min={dataAtual}
+          placeholder="Prazo"
+          name="deadline"
+          className="register-input"
+          onChange={handleaddValues}
+        />
 
         <button onClick={handleRegisterGame} className="register-button">
-          Cadastrar
+          Criar
         </button>
       </div>
 

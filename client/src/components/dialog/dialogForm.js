@@ -89,17 +89,7 @@ export default function FormDialog(props) {
             onChange={handleChangeValues}
             fullWidth
           />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="deadline"
-            label="deadline"
-            defaultValue={props.deadline}
-            type="number"
-            onChange={handleChangeValues}
-            fullWidth
-          />
-          <TextField
+           <TextField
             autoFocus
             margin="dense"
             id="description"
@@ -109,6 +99,17 @@ export default function FormDialog(props) {
             onChange={handleChangeValues}
             fullWidth
           />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="deadline"
+            label="deadline"
+            defaultValue={props.deadline}
+            type="date"
+            onChange={handleChangeValues}
+            fullWidth
+          />
+         
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
