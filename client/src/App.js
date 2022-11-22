@@ -12,8 +12,8 @@ export default function App() {
   const dia = String(data.getDate()).padStart(2, '0');
   const mes = String(data.getMonth() + 1).padStart(2, '0');
   const ano = data.getFullYear();
-  const dataAtual = ano + '-' + mes + '-' + dia;
-  
+  const dataAtual = `${ano}-${mes}-${dia}`;
+  console.log('AQUIIIIIIIIIIII' + data)
 
   const handleRegisterGame = () => {
     Axios.post("http://localhost:3001/register", {
