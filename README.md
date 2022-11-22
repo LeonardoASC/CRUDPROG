@@ -29,8 +29,8 @@
 
 ### Data-base
 
-+`Create database listadetarefas`
-+`Create table lista`
-+`Em Lista: Id, Name, deadline, description`
++ `Create database listadetarefas`
++ `Create table lista`
++ `Em Lista: Id, Name, deadline, description`
 
 
